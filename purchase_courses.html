@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Courses Page</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="_images/xhaw1logo.png" alt="Empowering the Nation Logo" height="150" width="150" class="logo">
+            <div class="container">
+                <nav id="topNav">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="six_month_courses.html">Six Month Courses</a></li>
+                        <li><a href="six_week_courses.html">Six Week Courses</a></li>
+                        <li class="currentPage">Purchase Courses</li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Purchase Courses</h1>
+        <form id="courseForm">
+            <h2>Select Courses:</h2>
+            <div>
+                <input type="checkbox" id="firstAid" name="courses" value="First Aid" data-price="1500">
+                <label for="firstAid">First Aid - R1500</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sewing" name="courses" value="Sewing" data-price="1500">
+                <label for="sewing">Sewing - R1500</label>
+            </div>
+            <div>
+                <input type="checkbox" id="landscaping" name="courses" value="Landscaping" data-price="1500">
+                <label for="landscaping">Landscaping - R1500</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lifeSkills" name="courses" value="Life Skills" data-price="1500">
+                <label for="lifeSkills">Life Skills - R1500</label>
+            </div>
+            <div>
+                <input type="checkbox" id="childMinding" name="courses" value="Child Minding" data-price="750">
+                <label for="childMinding">Child Minding - R750</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cooking" name="courses" value="Cooking" data-price="750">
+                <label for="cooking">Cooking - R750</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gardenMaintenance" name="courses" value="Garden Maintenance" data-price="750">
+                <label for="gardenMaintenance">Garden Maintenance - R750</label>
+            </div>
+
+            <h2>Contact Details</h2>
+            <label for="name">Name and Surname:</label>
+            <input type="text" id="name" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+            <button type="button" id="calculateButton">Calculate</button>
+        </form>
+        
+        <div id="invoice" style="margin-top: 20px;">
+            <h3>Invoice</h3>
+            <p id="totalAmount"></p>
+            <p id="vatAmount"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p><strong>Telephone Number:</strong> <a href="tel:+0628938873">062 893 8873</a></p>
+                <p><strong>Email:</strong> <a href="mailto:empower@gmail.com">empower@gmail.com</a></p>
+                <p><strong>Drop us a follow!</strong></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/cayd.s" target="_blank">@Empowering_the_Nation</a></p>
+                <p><strong>Facebook:</strong> <a href="https://pin.it/5fC5rFUg5" target="_blank">@Empowering_the_Nation</a></p>
+            </div>
+            <div class="footer-nav">
+                <h3>Page Links</h3>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="six_month_courses.html">Six Month Courses</a></li>
+                        <li><a href="six_week_courses.html">Six Week Courses</a></li>
+                        <li class="currentPage">Purchase Courses</li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Empowering the Nation. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
